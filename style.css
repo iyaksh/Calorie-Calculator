@@ -83,7 +83,7 @@ button{
    background: #eee;
    cursor: pointer;
 }
-button:hover{
+button:active{
     background: #ddd;
 }
 
