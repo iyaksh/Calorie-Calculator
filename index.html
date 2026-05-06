@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <h1>Calories Calculator</h1>
+        <p class="subHeading">This calorie calculator will tell you how much calories you have to intake daily in order to
+            reduce weight, gain weight and maintain weight you just need to enter 5 things about you and we are here to
+            help you in achiving your target goals. 
+        </p>
+
+        <div class="container">
+
+            <!-- Gender -->
+            <div class="card">
+                <p class="title"> What's your gender?</p>
+                <div class="options" id="gender">
+                    <div>
+                        <img src="Icons/male-icon-7928.png">
+                        <button >Male</button>
+                    </div>
+                    <div>
+                        <img src="Icons/female-icon-7877.png">
+                        <button >Female</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Age -->
+            <div class="card">
+                <p class="title">How old are you?</p>
+                <div class="inputBox">
+                    <input type="number" placeholder="Age" id="age">
+                    <span>Years</span>
+                </div>
+            </div>
+
+            <!-- Height -->
+            <div class="card">
+                <p class="title">How tall are you?</p>
+                <div class="inputBox">
+                    <input type="number" placeholder="Height" id="height">
+                    <span>Cm</span>
+                </div>
+            </div>
+
+            <!-- Weight -->
+            <div class="card">
+                <p class="title">What's your weight?</p>
+                <div class="inputBox">
+                    <input type="number" placeholder="Weight" id="weight">
+                    <span>Kg</span>
+                </div>
+            </div>
+
+            <!-- Exercise -->
+            <div class="card full">
+                <p class="title">What's your exrcise level?</p>
+                <div class="options" id="activity">
+                    <div>
+                        <img src="Icons/lessActive.jpg">
+                        <button>Less Active</button>
+                    </div>
+                    <div>
+                        <img src="Icons/Active.jpg">
+                        <button>Active</button>
+                    </div>
+                    <div class="log">
+                        <img src="Icons/moderate.jpg">
+                        <button>Moderately Active</button>
+                    </div>
+                    <div >
+                        <img src="Icons/veryActive.jpg">
+                        <button>Very Active</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="submit">
+            <button>Calculate daily calorie intake</button>
+        </div>
+
+        <div id="message">
+            <p id="maintain"></p>
+            <p id="loss"></p>
+            <p id="gain"></p>
+
+        </div>
+
+        <p id="errorMessage">sdff</p>
+
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
